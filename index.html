@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="test.png" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <header>
+        <div class="progress" id="progress">Question 1/74</div>
+    </header>
+    <section id="question-container" class="question-container">
+        <div id="question" class="question">Which of the following is the best online quiz maker?</div>
+        <div id="answers" class="answers"></div>
+    </section>
+    <footer>
+        <button id="next">Next Question</button>
+        <div id="feedback" class="feedback"></div>
+        <div id="score" class="score">
+            Correct answers: <span id="correct-count">0</span><br>
+            Wrong answers: <span id="wrong-count">0</span>
+        </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@300;400&display=swap');
+
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: rgba(255, 255, 255, 0.596);
+  padding: 20px;
+}
+
+.question-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.question {
+  margin-bottom: 1em;
+  color:#764ba2;
+}
+
+.answers {
+  list-style: none;
+  padding: 0;
+  color:#667eea;
+}
+
+.answers label {
+  background: #f0f0f0;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.answers input[type="radio"] {
+  display: none;
+}
+
+.answers label:hover,
+.answers input[type="radio"]:checked + label {
+  background: #dddddd73;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #764ba2;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.feedback {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; /* Center the feedback text */
+  width: 100%; /* Ensure the width is set to full container width */
+  display: block; /* Use block to apply width and margin */
+}
+
+
+.progress {
+  font-size: 0.8em;
+}
+
+label.disabled {
+  pointer-events: none; /* Prevents clicking on the label */
+  opacity: 0.6; /* Grays out the label */
+}
+
+
+.answer-option {
+  background-color: #28a745; /* Green for correct */
+  color: white;
+}
+
+
+/* Styles for correct and selected answers */
+.correct {
+  background-color: #28a745; /* Green for correct answer */
+  color: white;
+}
+
+.selected {
+  background-color: #a5a5a5; /* Red for wrong answer */
+  color: white;
+}
+label.correct {
+  background-color: #28a745; /* Green for correct */
+  color: white;
+}
+
+label.incorrect {
+  background-color: #dc3545; /* Red for incorrect answer */
+  color: white;
+}
+label {
+  /* Other styling for labels */
+  padding: 10px;
+  display: block;
+  background: #f0f0f0;
+  border-radius: 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="radio"]:disabled + label.correct {
+  background-color: #28a745; /* Green for correct answer */
+  color: white;
+}
+
+input[type="radio"]:disabled + label.incorrect {
+  background-color: #dc3545; /* Red for incorrect answer */
+  color: white;
+}
+.correct {
+  background-color: #28a745; /* Green for correct answer */
+  color: white;
+}
+
+.incorrect {
+  background-color: #dc3545; /* Red for incorrect answer */
+  color: white;
+}
